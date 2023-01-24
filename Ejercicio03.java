@@ -8,11 +8,16 @@ public class Ejercicio03{
 
         ArrayList<Integer> a = new ArrayList<Integer>(10);
         int n = 0;
-
+        
         for(int i = 0; i<10; i++){
-            System.out.print("Dime el "+(i+1)+" número: ");
-            n = sc.nextInt();
-            a.add(n);
+            try {
+                System.out.print("Dime el "+(i+1)+" número: ");
+                n = sc.nextInt();
+                a.add(n);
+            } catch (Exception e) {
+                System.out.println("Se ha producido un error");
+                i--;
+            }
         }
 
         System.out.println("El array sin ordenar:");
