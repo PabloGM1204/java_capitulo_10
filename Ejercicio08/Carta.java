@@ -5,7 +5,7 @@ public class Carta{
     private String palo;
     private static String [] tip = {"Bastos", "Oros", "Copas", "Espadas"};
     private String num;
-    private static String [] val = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Sota", "Caballo", "Rey"};
+    private static String [] val = {"As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Sota", "Caballo", "Rey"};
 
     //Constructor
     Carta(){
