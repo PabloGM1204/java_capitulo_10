@@ -3,8 +3,6 @@ import java.util.ArrayList;
 
 public class Ejercicio12{
     public static void main(String[] args) {
-        ArrayList<Carta> baraja = new ArrayList<Carta>();
-
         int puntos = 0;
         for(int i = 0; i<5; i++){
             Carta c = new Carta();
