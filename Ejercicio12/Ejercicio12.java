@@ -20,7 +20,7 @@ public class Ejercicio12{
                     break;
                 case "caballo":
                     puntos += 3;
-                    break;ç
+                    break;
                 case "rey":
                     puntos += 4;
                     break;

@@ -25,6 +25,6 @@ public class Carta{
 
     //Métodos
     public String toString(){
-        return this.p+" de "+this.valor;
+        return this.valor+" de "+this.p;
     }
 }
