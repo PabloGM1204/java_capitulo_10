@@ -23,15 +23,22 @@ public class Ejercicio19{
         do {
             System.out.print("Introduzca una palabra y le daré los sinónimos: ");
             String palabra = sc.next();
+            // Si la palabra escrita es igual a salir termina el programa
             if(palabra.equals("salir")){
                 salir = true;
+                // Si el diccionario contiene la palabra
             }else if(diccionario.containsKey(palabra)){
                 System.out.print("Sínonimos de "+palabra+":");
+                // Guardo en una variable el valor de la clave(la palabra escrita)
                 String significado = diccionario.get(palabra);
+                // Creo un ArrayList con los sinonimos de la palabra
                 ArrayList<String> sinonimos = new ArrayList<String>();
 
+                // Reccorro el diccionario
                 for(Map.Entry entrada : diccionario.entrySet()){
+                    // Si la la palabra introducida es igual a una palabra del diccionario y el diccionario contiene el significado
                     if(!entrada.getKey().equals(palabra) && entrada.getValue().equals(significado)){
+                        // Lo añade en el ArrayList haciendo un casting a String
                         sinonimos.add((String) entrada.getKey());
                     }
                 }
@@ -48,7 +55,7 @@ public class Ejercicio19{
         String clave = d.get(p);
 
         int cont = 0;
-
+        // Recorro el array 
         for(Map.Entry entrada : d.entrySet()){
             if(entrada.getValue().equals(clave)){
                 cont++;
