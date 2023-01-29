@@ -14,6 +14,7 @@ public class Carrito{
     //Metodos
     public void agrega(Elemento e){
         boolean encontrado = false;
+        // El elemento es un objeto que coge el primer valor del array carro y asi seguidamente
         for (Elemento el : carro) {
             if(el.getNombre().equals(e.getNombre())){
                 el.setCantidad(el.getCantidad()+e.getCantidad());
